@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <script src="game.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -13,39 +13,39 @@
     <h1>ROCK, PAPER, SCISSORS</h1>
 
     <div id="main">
-        <div id="HumanScore"></div>
+        <div id="humanScore">0</div>
         <div id="game">
             <div id="top">
-                <div id="roundName"></div>
-                <div id="roundResult"></div>
+                <div id="roundName">round 0</div>
+                <div id="roundResult">RESULT</div>
             </div>
             <div id="bottom">
                 <div id="humanChoice">
-                    <img src="./images/choose.png" alt="choose">
+                    <img id="humanImage" src="./images/ROCK.png">
                     <div class="text">YOU</div>
                 </div>
                 <div id="vs">VS</div>
                 <div id="computerChoice">
-                    <img src="./images/choose.png" alt="choose">
+                    <img id="computerImage" src="./images/PAPER.png">
                     <div class="text">BOT</div>
                 </div>
             </div>
         </div>
-        <div id="computerScore"></div>
+        <div id="computerScore">0</div>
     </div>
 
     <div id="chooseMove">
         <div class="move">
-            <img src="./images/ROCK.png" alt="ROCK">
-            <button id="chosenMove">ROCK</button>
+            
+            <button id="rock"><img src="./images/ROCK.png" alt="ROCK"></button>
         </div>
         <div class="move">
-            <img src="./images/PAPER.png" alt="PAPER">
-            <button id="chosenMove">PAPER</button>
+           
+            <button id="paper"> <img src="./images/PAPER.png" alt="PAPER"></button>
         </div>
         <div class="move">
-            <img src="./images/SCISSORS.png" alt="SCISSORS">
-            <button id="chosenMove">SCISSORS</button>
+            
+            <button id="scissors"><img src="./images/SCISSORS.png" alt="SCISSORS"></button>
         </div>
     </div>
 
